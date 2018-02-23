@@ -1,0 +1,16 @@
+server:
+  port: 20009
+spring:
+  profiles:
+    active: dev
+  application:
+      name: sjes-dzfp-api
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000

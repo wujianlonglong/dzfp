@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      host: prod3.sjes.sanjiang.info
+      port: 27017
+      database: sjes-hub-api
+
+  thymeleaf:
+     check-template-location: true
+     prefix: classPath:/templates/
+     suffix: .html
+     mode: HTML5
+     encoding: UTF-8
+     content-type: text/html
+     cache: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://prod1.sjes.sanjiang.info:8761/eureka/

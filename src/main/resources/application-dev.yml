@@ -1,0 +1,36 @@
+spring:
+  data:
+    mongodb:
+      host: srv3.sanjiang.info
+      port: 27017
+      database: sjes-hub-api
+
+  thymeleaf:
+     check-template-location: true
+     prefix: classPath:/templates/
+     suffix: .html
+     mode: LEGACYHTML5
+     encoding: UTF-8
+     content-type: text/html
+     cache: false
+
+log4j:
+  logger:
+    org:
+      hibernate:
+        SQL: trace
+        type: trace
+logging:
+  level:
+    org.springframework.security: debug
+    org.mongodb.driver.protocol: debug
+    org.mongeez: debug
+
+eureka:
+#  instance:
+#    hostname: 193.0.1.122
+  instance:
+    hostname: srv0.sanjiang.info
+  client:
+    serviceUrl:
+      defaultZone: http://srv3.sanjiang.info:8761/eureka/
