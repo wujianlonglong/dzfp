@@ -97,4 +97,39 @@
 	</build>
 
 
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<url>http://nexus.sanjiang.info/content/groups/public/</url>
+		</repository>
+		<!--<repository>-->
+		<!--<id>jcenter</id>-->
+		<!--<url>http://jcenter.bintray.com</url>-->
+		<!--</repository>-->
+		<repository>
+			<id>spring-snapshot</id>
+			<url>https://repo.spring.io/snapshot</url>
+		</repository>
+		<repository>
+			<id>spring-milestone</id>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshot</id>
+			<url>https://repo.spring.io/snapshot</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestone</id>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 </project>
