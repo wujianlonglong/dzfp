@@ -5,14 +5,7 @@ spring:
       port: 27017
       database: sjes-hub-api
 
-#  thymeleaf:
-#     check-template-location: true
-#     prefix: classPath:/templates/
-#     suffix: .html
-#     mode: LEGACYHTML5
-#     encoding: UTF-8
-#     content-type: text/html
-#     cache: false
+
 
 log4j:
   logger:
