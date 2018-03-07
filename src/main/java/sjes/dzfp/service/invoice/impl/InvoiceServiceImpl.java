@@ -200,10 +200,10 @@ public class InvoiceServiceImpl implements InvoiceService {
                 String streamNo = searchNo.substring(14, 20);
                 res = InvoiceUtils.otherOrderSerachDetail(shopNo, posNo, streamNo, orderDate);
             } else if (searchNo.startsWith("2")) {
-                if (searchNo.length() != 27) {
-                    responseMessage.setFailure(-1, "订单查询失败：查询号以2开头的长度必须为27位", null);
-                    return responseMessage;
-                }
+//                if (searchNo.length() != 27) {
+//                    responseMessage.setFailure(-1, "订单查询失败：查询号以2开头的长度必须为27位", null);
+//                    return responseMessage;
+//                }
                 String orderNo = searchNo.substring(7, searchNo.length() - 2);
                 String orderDate = searchNo.substring(1, 7);
                 orderDate = "20" + orderDate.substring(0, 2) + "-" + orderDate.substring(2, 4) + "-" + orderDate.substring(4, 6);
